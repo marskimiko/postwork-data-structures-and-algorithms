@@ -1,5 +1,10 @@
 function reverseString(str) {
-  // type your code here
+  let newString = "";
+  
+  for (let i = str.length - 1; i >= 0; i--) {
+    newString += str[i];
+  }
+  return newString;
 }
 
 if (require.main === module) {
@@ -17,3 +22,7 @@ module.exports = reverseString;
 
 // Please add your pseudocode to this file
 // And a written explanation of your solution
+
+// receive string and convert string to array with splice or splice
+// loop through array by length and reverse through indexes
+// push each item in array to empty string variable
