@@ -1,5 +1,17 @@
 function fibonacci(num) {
   // type your code here
+  if (num === 0) return 0;
+  let spot1 = 0;
+  let spot2 = 1;
+  let current;
+
+  for (i = 2; i <= num; i++) {
+    current = spot1 + spot2;
+    spot1 = spot2;
+    spot2 = current;
+  }
+
+  return spot2;
 }
 
 if (require.main === module) {
